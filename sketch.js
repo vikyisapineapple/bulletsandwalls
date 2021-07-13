@@ -19,7 +19,9 @@ function setup() {
   wall.shapeColor =80,80,80;
   wall.shapeColor = color(80,80,80);
 
-  function hasCollided(Lbullet,Lwall){
+}
+
+function hasCollided(Lbullet,Lwall){
 
     bulletRightEdge=bullet.x+bullet.width;
     wallLeftEdge=wall.x
@@ -29,7 +31,6 @@ function setup() {
     }
     return false
   }
-}
 
 function draw() {
   background(0);
